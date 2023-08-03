@@ -11,4 +11,16 @@
 9. mysql> `ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;`
 10. mysql>`exit`
 
+# Create user 
+
+1. `sudo mysql`
+2. mysql>`CREATE USER 'user1'@'%' IDENTIFIED BY 'password';`  % mean that you can connect from all ip
+3. mysql>`GRANT ALL PRIVILEGES ON my_timeweb.* TO 'user1'@'%';` gain all right to user
+4. mysql>`CREATE DATABASE IF NOT EXISTS database_name;` 
+5. mysql>`CREATE TABLE Testtable ( id INT, value VARCHAR(255));`
+6. mysql>`INSERT Testtable(id, value) VALUES('1', 'test1');`
+
 [Install MySql actual 07.2023](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
+
+/etc/php/7.4/cli
+925 extension=mysqli

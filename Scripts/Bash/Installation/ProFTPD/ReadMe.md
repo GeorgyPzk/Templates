@@ -16,3 +16,5 @@ ff02::2 ip6-allrouters
 10. 
 
 [Install Pro FTPD]()
+
+[Create user](https://server-gu.ru/proftpd-users/)
