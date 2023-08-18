@@ -13,7 +13,7 @@ ff02::2 ip6-allrouters
 7. 
 8. 
 9. 
-10. 
+10. chmod -R 0775 /srv/ftp/ 
 
 [Install Pro FTPD]()
 
