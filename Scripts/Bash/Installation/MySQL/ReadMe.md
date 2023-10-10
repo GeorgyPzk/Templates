@@ -25,6 +25,17 @@
 /etc/php/7.4/cli
 925 extension=mysqli
 
+# Open port 3306(mysql port) for remote connection 
+
+1. Find config file MySQL 
+PATH: `/etc/mysql/mysql.conf.d/mysqld.cnf`
+
+2. Commit this line `#bind-address = 127.0.0.1`
+
+3. Reboot server
+`sudo systemctl restart mysql`
+`sudo systemctl status mysql`
+
 # Connect DB with apach2
 
 [LAMP](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-22-04)
